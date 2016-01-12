@@ -1,0 +1,108 @@
+
+body {
+
+background: #dddddd;
+    color:blue;
+    }
+nav {
+    
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #8AD9FF;
+        border-radius: 8px;
+
+}
+header {
+   //background:#eeeeee;
+   padding:10px;
+    text-align: center;
+}
+nav li{
+    
+    display: inline-block;
+     padding: 30px;
+    }
+nav li a{
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px;
+    color: red;
+    }
+nav li a:hover{
+    color: black;
+}
+nav ul{
+    list-style-type:none;
+    overflow: hidden;
+    
+    
+}
+h2{
+    text-align: center;
+}
+
+
+footer {
+   position:fixed;
+   text-align: center;
+   bottom: 0;
+   width:100%;
+
+}
+form{
+    text-align: center;
+}
+
+
+#log_in{
+    
+    margin-left: 150px;
+    padding:100px;
+    float: left;
+    background-color: aquamarine;
+    border-radius: 15px;
+   
+}
+#sign_up{
+    margin: 100px;
+    padding-right: 100px;
+    float: right
+}
+#register {
+    
+    position: absolute;
+    text-decoration: none;
+    top: 60px;
+    right: 10px;
+    font-size: 22px;
+    
+}
+#search{
+    position: absolute;
+    text-decoration: none;
+    top: 10px;
+    right: 10px;
+}
+#logIn{
+    text-decoration: none;
+    top: 60px;
+    right: 200px;
+    font-size: 22px;
+    color: red;
+}
+ 
+form label{
+    font-size: .9em;
+  float: left;
+}
+form input {
+    float: right;
+}
+#button{
+    margin-top: 20px;
+    margin-left: 100px;
+    
+}
