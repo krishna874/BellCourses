@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
+      <head>
 <title>Registration Form</title>
         <link rel="stylesheet" href="css/main.css" />
-    </head>
+      </head>
 <body>
-    <h2>Registration Form</h2>
-       <form >
-    FirstName:<input type="text" name="FirstName"/><br>
-    LastName:<input type="text" name="LastName"/><br>
-    Date Of Birth:<input type="date" name="birthday"/><br>
-           Email:<input type="email" name="email"/> <br>
-           Phone Number:<input type="tel" name="phone number"><br>
-           <h3 >Courses Offered</h3>
-           <input type="checkbox" name="courses"value="html" >HTML 
-           <input type="checkbox" name="courses"value="css" >CSS 
+    <nav>
+            <ul>
+                <li><a href="index.html" title="home">HOME</a></li>
+                <li><a href="http://www.w3schools.com/html/default.asp" title="about html">HTML</a></li>
+                <li><a href="#CSS" title="about css">CSS</a></li>
+                <li><a href="#JavaScript" title=" about javaScript">JavaScript</a></li>
+                <li><a href="#SQL" title="about SQL">SQL</a></li>
+                <li><a href="#Java" title="about Java">JAVA</a></li>
+                
+                <li><a href="#PHP" title="about PHP">PHP</a></li>
+                
+            </ul>
+            
+            
+               </nav>
+    <img id="rImage" src="Images/510611_1994_508071.jpg" alt="registration">
+    <aside id="regsection">
+    <legend >Registration Form</legend>
+       <form  method="get">
+           <table>
+             <tr> 
+                 <td>First Name <input type="text" name="FirstName"/></td></tr>
+              <tr>
+                  <td>Last Name<input type="text" name="LastName"/></td></tr>
+               <tr><td>Date Of Birth<input type="date" id="dob"name="birthday"/></td></tr>
+           <tr><td>Email <input type="email" name="email"/></td></tr>
+           <tr><td>Phone Number <input type="tel" name="phonenumber"></td></tr>
+           <tr>    
+               <td> <div id="courses1">Select Courses </div><select name="courses" >
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="sql">SQL</option>
+                  <option value="php">PHP</option>
+                  <option value="java">JAVA</option>
+        </td></tr>
            
-           <input type="checkbox" name="courses"value="javaScript" > JavaScript 
-           <input type="checkbox" name="courses"value="sql" >SQL 
-           <input type="checkbox" name="courses"value="php" >PHP<br>
-           
-           <input type="button" name="submit" value="Submit"/>
+           <tr><td><input type="button" name="submit" value="Submit"/></td> </tr
+          </table>
         </form>
+           </aside>
     
     </body>
 </html>

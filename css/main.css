@@ -11,14 +11,15 @@ nav {
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 2px 3px #333333;
-    background-color: #8AD9FF;
-        border-radius: 8px;
+    background: #8AD9FF;
+    border-radius: 8px;
 
 }
 header {
    //background:#eeeeee;
    padding:10px;
     text-align: center;
+    color: red;
 }
 nav li{
     
@@ -46,7 +47,7 @@ h2{
 
 
 footer {
-   position:fixed;
+   
    text-align: center;
    bottom: 0;
    width:100%;
@@ -55,22 +56,57 @@ footer {
 form{
     text-align: center;
 }
-
-
-#log_in{
+#regsection
+{
+    margin-left: 150px;
+    padding:50px;
+    float: left;
+    background: aquamarine;
+    border-radius: 15px;
+    margin-top: 100px;
+}
+#login{
     
     margin-left: 150px;
-    padding:100px;
+    padding:110px;
     float: left;
-    background-color: aquamarine;
+    background: aquamarine;
     border-radius: 15px;
+    //margin-top: 15px;
+    
    
 }
-#sign_up{
-    margin: 100px;
-    padding-right: 100px;
-    float: right
+section h2{
+    font-size: 1.6em;
+  color: #193742;
+  font-weight: bold;
+  margin-bottom: .5em;
+  clear: right;
 }
+section p{
+    font-weight: 50;
+    font-size: 1.25em;
+  line-height:1.5;
+}
+section img{
+      float: left;
+  //padding: 10px 10px 10px 0;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+section a.more{
+    //text-decoration: none;
+    display:block;
+  float: right;
+  width: 95px;
+  height: 30px;
+  background: url("../more_bug.gif") no-repeat left top;
+  text-indent: -1000em;
+  margin: 15px 0 0 15px;
+}
+
 #register {
     
     position: absolute;
@@ -86,12 +122,14 @@ form{
     top: 10px;
     right: 10px;
 }
-#logIn{
+#indexLogin{
+    position: absolute;
     text-decoration: none;
-    top: 60px;
+   top: 85px;
     right: 200px;
     font-size: 22px;
-    color: red;
+    color: balck;
+   //float: right;
 }
  
 form label{
@@ -105,4 +143,44 @@ form input {
     margin-top: 20px;
     margin-left: 100px;
     
+}
+form ul li{
+    list-style-type: none;
+    padding: 20px;
+}
+table tr td{
+    padding: 5px;
+}
+#button{
+    align-content: space-around;
+}
+select,#dob{
+
+    width:170px;
+    height: 50px:
+}
+#courses1{
+    font-size: 1.16em;
+}
+legend{
+    align:center;
+    //align-content: center;
+    font-size: 1.25em;
+    font-family:  sans-serif;
+    font-style: normal;
+    margin-left: 100px;
+}
+#rImage{
+    width: 650px;
+    height: 400px;
+    float: right;
+    margin-top: 100px;
+}
+
+
+#regsection table td{
+    font-size: 1.15em;
+    color: black;
+    width: 350px;
+    padding: 10px;
 }
