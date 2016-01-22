@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css" />
+
+    </head>
+    <body>
+        <form id="formCourses">
+            <table id="courseTable">
+                <tr>
+                    <td class="title">Name</td>
+                    <td><input id="name" name="name" type="text" value=""></td>
+                </tr>
+                <tr>
+                    <td class="title">Fee  </td>
+                    <td><input id="fee" name="fee" type="text" value=""></td>
+                </tr>
+                
+                <tr>
+                    <td class="title">Duration</td>
+                    <td><input id="duration" name="duration" type="text" value=""></td>
+                </tr>
+                
+                <tr>
+                    <td class="title">Level</td>
+                    <td><select id="level" name="level"  >
+                             <option value="none">None</option>
+                             <option value="basic">Basic</option>
+                             <option value="intermediate">Intermediate</option>
+                             <option value="advanced">Advanced</option>
+                            <option value="extreme">Extreme</option>
+                        </select>
+                    </td> 
+                </tr>
+                <tr>
+                    <td><input  id="clear" name="clear"type="reset" value="clear"/></td>
+                    <td><input id="save" name="save" type="button" value="save" onclick="transferToTable()"/></td>
+                </tr>
+            </table>
+        </form>
+        <table id="chart" name="chart">
+            <tr>
+                <th>Name</th>
+                <th>Fee</th>
+                 
+                 <th>Duration</th>
+                <th>Level</th>
+            </tr>
+        </table>
+    <script src="javaScript/main.js"></script>
+    </body>
+</html>

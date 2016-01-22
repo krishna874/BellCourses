@@ -2,8 +2,9 @@
 body {
 
 background: #dddddd;
-    color:blue;
+    
     }
+
 nav {
     
     font-size: 16px;
@@ -16,10 +17,12 @@ nav {
 
 }
 header {
-   //background:#eeeeee;
+   
    padding:10px;
     text-align: center;
     color: red;
+    font-weight: bold;
+    text-shadow: 3px 2px 3px #333333;
 }
 nav li{
     
@@ -87,6 +90,8 @@ section p{
     font-weight: 50;
     font-size: 1.25em;
   line-height:1.5;
+    color: black;
+    text-indent: 70px;
 }
 section img{
       float: left;
@@ -96,15 +101,11 @@ section img{
     height: 250px;
 }
 
-section a.more{
-    //text-decoration: none;
-    display:block;
-  float: right;
-  width: 95px;
-  height: 30px;
-  background: url("../more_bug.gif") no-repeat left top;
-  text-indent: -1000em;
-  margin: 15px 0 0 15px;
+section a:link{
+    background: url(../Images/more_bug.gif) no-repeat left top;
+   color:transparent;
+    text-indent: -1000em;
+
 }
 
 #register {
@@ -183,4 +184,55 @@ legend{
     color: black;
     width: 350px;
     padding: 10px;
+}
+<!-- css for course.html  page -->
+#formCourses{
+    align-content: center;
+    //text-align: center;
+    //background:#2EFEF7;
+}
+#courseTable{
+    padding: 50px;
+    margin-top: 100px;
+    margin-left: 500px;
+    //align-items: center;
+    background:#2EFEF7;
+    border-radius: 20px;
+}
+.title{
+  font-size: 1.5em; 
+    font-style:normal; 
+    padding-right: 50px;
+}
+
+input[type="button"],input[type="reset"],input[type="text"]{
+  font-size: 1.2em; 
+    font-style:normal;
+}
+select{
+    font-size: 1.2em;
+    height: 30px;
+    //width: 0px;
+    border-radius: 5px;
+}
+input[type="text"] {
+     //padding: 0px;
+    border-radius: 5px;
+    height: 25px;
+    width: 200px;
+}
+#chart{
+    margin-top: 100px;
+    margin-left: 350px;
+}
+#chart th{
+    padding-right: 150px;
+    font-size: 1.55em;
+    font-style: normal;
+
+}
+#chart td{
+    padding-right: 150px;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
 }
