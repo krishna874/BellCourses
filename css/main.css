@@ -97,8 +97,8 @@ section img{
       float: left;
   //padding: 10px 10px 10px 0;
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 section a:link{
@@ -223,16 +223,41 @@ input[type="text"] {
 }
 #chart{
     margin-top: 100px;
-    margin-left: 350px;
+    margin-left: 100px;
 }
 #chart th{
-    padding-right: 150px;
+    padding-right: 120px;
     font-size: 1.55em;
     font-style: normal;
 
 }
 #chart td{
-    padding-right: 150px;
+    padding-right: 120px;
     font-size: 1.25em;
     font-family: Arial, Helvetica, sans-serif;
+}
+#addCourses {
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+/*css for for topics.html */ 
+article{
+   font-size: 1.25em;
+    line-height:1.5;
+     text-indent: 70px;
+}
+#list li {
+    list-style-type: none;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica,sans-serif ;
+    padding: 20px;
+    text-align: center;
+    
+}
+#addcourse {
+    position: absolute;
+right: 20px;
+    font-size: 1.25em;
 }
