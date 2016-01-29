@@ -1,9 +1,14 @@
 
 body {
 
-background: #dddddd;
+background: ;
     
     }
+/*
+html { background-color: #0489B1; }
+body { margin:50px 100px; 
+    background-color:#FFFFFF ;
+}*/
 
 nav {
     
@@ -12,7 +17,7 @@ nav {
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 2px 3px #333333;
-    background: #8AD9FF;
+    background: rgba(0,0,0,0.5);;
     border-radius: 8px;
 
 }
@@ -33,14 +38,13 @@ nav li a{
     text-decoration: none;
     padding: 25px;
     font-size: 25px;
-    color: red;
+    color: white;
     }
-nav li a:hover{
-    color: black;
+
 }
 nav ul{
     list-style-type:none;
-    overflow: hidden;
+
     
     
 }
@@ -100,11 +104,13 @@ section img{
     width: 200px;
     height: 200px;
 }
-
+section a{
+    text-decoration: none;
+}
 section a:link{
-    background: url(../Images/more_bug.gif) no-repeat left top;
-   color:transparent;
-    text-indent: -1000em;
+    /*background: url(../Images/more_bug.gif) no-repeat left top;*/
+   color:greenyellow;
+    /*text-indent: -1000em;*/
 
 }
 
@@ -252,12 +258,28 @@ article{
     list-style-type: none;
     font-size: 1.25em;
     font-family: Arial, Helvetica,sans-serif ;
-    padding: 20px;
-    text-align: center;
+    padding: 30px;
+
     
+}
+article img{
+    height: 120px;
+    width: 200px;
 }
 #addcourse {
     position: absolute;
 right: 20px;
     font-size: 1.25em;
+}
+/*sub-topics.html*/
+
+#uiList li  {
+    display: block;
+    float: left;
+    clear: left;
+    overflow: hidden;
+    margin-top: 30px;
+    display: none;
+    
+    
 }

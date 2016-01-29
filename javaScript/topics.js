@@ -40,3 +40,29 @@ function setList(array) {
     }
     
 }
+function addingToCourse(array) {
+    
+}
+/*var topicName = document.getElementById("topics");
+topicName.addEventListener("mouseover",function(e) {
+    
+    if(e.target.tagName === "A"){
+       // console.log(e.target);
+    
+    var newNode = document.createElement("p");
+    newNode.innerHTML ="HTML";
+    e.target.appendChild(newNode);
+    }
+    
+},false);
+topicName.addEventListener("mouseout",function(e){
+    if(e.target.tagName === "A") {
+        
+    }
+    
+});
+
+function subLinks(e) {
+    console.log(e.text,e.innerHTML);
+    e.style.color = "red";
+}*/
