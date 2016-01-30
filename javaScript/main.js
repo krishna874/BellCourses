@@ -96,6 +96,7 @@ function setOptions(array) {
     }
 }
 //for JASON and AJAX
+/*
 window.onload = function() {
 var request = new XMLHttpRequest();
 request.onreadystatechange = function () {
@@ -135,10 +136,28 @@ function printing(json) {
      
    }
 }
+*/
 
+$("document").ready(function(){
+    $.ajax({url:"topics.json", success:printing, type:"GET", dataType:"json"});
+    
+});
+function printing(json) {
+    
+    for(var i in json.topics) {
+        var obj = json.topics[i];
+        var tr = $("<tr>");
+    
+        for(var i in obj) {
+            var td = $("<td>").html(obj[i]);
+            $(tr).append(td);
+           }
+        
+    $("#chart").append(tr);
+        
+      }   
 
-
-
+}
 
 
 
