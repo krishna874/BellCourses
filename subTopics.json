@@ -1,27 +1,112 @@
-{"UI":[
-    {"name":"HTML","fee":"$100","duration":"15days","level":"basic"},
-    {"name":"CSS","fee":"$100","duration":"15days","level":"intermediate"},
-    {"name":"JavaScript","fee":"$100","duration":"20days","level":"advanced"},
-    {"name":"AngularJS","fee":"$150","duration":"30days","level":"basic"}
-    
-]}
-{"Java":[
-    {"name":"Core Java","fee":"$100","duration":"30days","level":"basic"},
-    {"name":"Advanced Java","fee":"$150","duration":"35days","level":"intermediate"},
-    {"name":"Springs","fee":"$100","duration":"20days","level":"advanced"},
-    {"name":"Structs","fee":"$150","duration":"30days","level":"basic"}
-    
-]}
-{"DotNet":[
-    {"name":"C#.Net","fee":"$100","duration":"30days","level":"advanced"},
-    {"name":"ASP.Net","fee":"$150","duration":"35days","level":"intermediate"},
-    {"name":"VB.Net","fee":"$100","duration":"20days","level":"advanced"}    
-    
-]}
-{"DataBase":[
-    {"name":"SQL","fee":"$100","duration":"30days","level":"advanced"},
-    {"name":"PlSQL","fee":"$150","duration":"35days","level":"intermediate"},
-    {"name":"MySQL","fee":"$100","duration":"20days","level":"advanced"},
-    {"name":"Oracle SQL","fee":"$100","duration":"20days","level":"advanced"} 
-    
-]}
+[
+    {
+        "UI": [
+            {
+                "name": "HTML",
+                "fee": "$100",
+                "duration": "15days",
+                "level": "basic"
+            },
+            {
+                "name": "CSS",
+                "fee": "$100",
+                "duration": "15days",
+                "level": "intermediate"
+            },
+            {
+                "name": "JavaScript",
+                "fee": "$100",
+                "duration": "20days",
+                "level": "advanced"
+            },
+            {
+                "name": "AngularJS",
+                "fee": "$150",
+                "duration": "30days",
+                "level": "basic"
+            }
+
+]
+    },
+    {
+        "Java": [
+            {
+                "name": "Core Java",
+                "fee": "$100",
+                "duration": "30days",
+                "level": "basic"
+            },
+            {
+                "name": "Advanced Java",
+                "fee": "$150",
+                "duration": "35days",
+                "level": "intermediate"
+            },
+            {
+                "name": "Springs",
+                "fee": "$100",
+                "duration": "20days",
+                "level": "advanced"
+            },
+            {
+                "name": "Structs",
+                "fee": "$150",
+                "duration": "30days",
+                "level": "basic"
+            }
+
+]
+    },
+    {
+        "DotNet": [
+            {
+                "name": "C#.Net",
+                "fee": "$100",
+                "duration": "30days",
+                "level": "advanced"
+            },
+            {
+                "name": "ASP.Net",
+                "fee": "$150",
+                "duration": "35days",
+                "level": "intermediate"
+            },
+            {
+                "name": "VB.Net",
+                "fee": "$100",
+                "duration": "20days",
+                "level": "advanced"
+            }
+
+]
+    },
+    {
+        "DataBase": [
+            {
+                "name": "SQL",
+                "fee": "$100",
+                "duration": "30days",
+                "level": "advanced"
+            },
+            {
+                "name": "PlSQL",
+                "fee": "$150",
+                "duration": "35days",
+                "level": "intermediate"
+            },
+            {
+                "name": "MySQL",
+                "fee": "$100",
+                "duration": "20days",
+                "level": "advanced"
+            },
+            {
+                "name": "Oracle SQL",
+                "fee": "$100",
+                "duration": "20days",
+                "level": "advanced"
+            }
+
+]
+    }
+]

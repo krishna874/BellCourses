@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/main.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-    </head>
-    <body>
-        <input type="button" id="addCourses" value="Add Courses" onclick="openCourseForm()" />
-        <form id="formCourses" style="display:none">
-            <table id="courseTable">
-                <tr>
-                    <td class="title">Name</td>
-                    <td><input id="name" name="name" type="text" value=""></td>
-                </tr>
-                
-                <tr><td class="title">Course</td>
-                    <td>
-                        <select id="courses" name="courses" onchange="subTopics(this)">
-                            
-                            <option value="ui">UI</option>
-                             <option value="dotnet">DotNet</option>
-                             <option value="java">Java</option>
-                             <option value="database">DataBase</option>
-                        
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="title">Sub Courses</td>
-                <td><select id="subCourses" >
-                    <option value="html">HTML</option>
-                             <option value="CSS">CSS</option>
-                             <option value="JavaScript">JavaScript</option>
-                             <option value="angularJS">AngularJS</option>
-                             </select>
-                            
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="title">Fee  </td>
-                    <td><input id="fee" name="fee" type="text" value=""></td>
-                </tr>
-                <tr>
-                    <td class="title">Duration</td>
-                    <td><input id="duration" name="duration" type="text" value=""></td>
-                </tr>
-                
-                <tr>
-                    <td class="title">Level</td>
-                    <td><select id="level" name="level"  >
-                             <option value="none">None</option>
-                             <option value="basic">Basic</option>
-                             <option value="intermediate">Intermediate</option>
-                             <option value="advanced">Advanced</option>
-                            <option value="extreme">Extreme</option>
-                        </select>
-                    </td> 
-                </tr>
-                <tr>
-                    <td><input  id="clear" name="clear"type="reset" value="clear"/></td>
-                    <td><input id="save" name="save" type="button" value="save" onclick="transferToTable()"/></td>
-                </tr>
-            </table>
-        </form>
-        <table id="chart" name="chart">
+<head>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="javaScript/jquery-2.2.0.js"></script>
+
+</head>
+
+<body>
+    <input type="button" id="addCourses" value="Add Courses" onclick="openCourseForm()" />
+    <form id="formCourses" style="display:none">
+        <table id="courseTable">
             <tr>
-                <th>Name</th>
-                <th>Course</th>
-                <th>Sub&nbsp;Course</th>
-                <th>Fee</th>
-                 <th>Duration</th>
-                <th>Level</th>
+                <td class="title">Name</td>
+                <td>
+                    <input id="name" name="name" type="text" value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="title">Course</td>
+                <td>
+                    <select id="courses" name="courses" onchange="subTopics(this)">
+
+                        <option value="ui">UI</option>
+                        <option value="dotnet">DotNet</option>
+                        <option value="java">Java</option>
+                        <option value="database">DataBase</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Sub Courses</td>
+                <td>
+                    <select id="subCourses">
+                        <option value="html">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="angularJS">AngularJS</option>
+                    </select>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td class="title">Fee </td>
+                <td>
+                    <input id="fee" name="fee" type="text" value="">
+                </td>
+            </tr>
+            <tr>
+                <td class="title">Duration</td>
+                <td>
+                    <input id="duration" name="duration" type="text" value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="title">Level</td>
+                <td>
+                    <select id="level" name="level">
+                        <option value="none">None</option>
+                        <option value="basic">Basic</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="extreme">Extreme</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="clear" name="clear" type="reset" value="clear" />
+                </td>
+                <td>
+                    <input id="save" name="save" type="button" value="save" onclick="transferToTable()" />
+                </td>
             </tr>
         </table>
-        
+    </form>
+    <table id="chart" name="chart">
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Sub&nbsp;Course</th>
+            <th>Fee</th>
+            <th>Duration</th>
+            <th>Level</th>
+        </tr>
+    </table>
+
     <script src="javaScript/main.js"></script>
-    </body>
+</body>
+
 </html>

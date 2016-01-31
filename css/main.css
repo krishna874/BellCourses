@@ -1,9 +1,7 @@
-
 body {
+    background: ;
+}
 
-background: ;
-    
-    }
 /*
 html { background-color: #0489B1; }
 body { margin:50px 100px; 
@@ -11,233 +9,211 @@ body { margin:50px 100px;
 }*/
 
 nav {
-    
     font-size: 16px;
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: bold;
     text-align: center;
     text-shadow: 3px 2px 3px #333333;
-    background: rgba(0,0,0,0.5);;
+    background: rgba(0, 0, 0, 0.5);
+    ;
     border-radius: 8px;
-
 }
 header {
-   
-   padding:10px;
+    padding: 10px;
     text-align: center;
     color: red;
     font-weight: bold;
     text-shadow: 3px 2px 3px #333333;
 }
-nav li{
-    
+nav li {
     display: inline-block;
-     padding: 30px;
-    }
-nav li a{
+    padding: 30px;
+}
+nav li a {
     text-decoration: none;
     padding: 25px;
     font-size: 25px;
     color: white;
-    }
+}
 
 }
-nav ul{
-    list-style-type:none;
-
-    
-    
+nav ul {
+    list-style-type: none;
 }
-h2{
+h2 {
     text-align: center;
 }
-
-
 footer {
-   
-   text-align: center;
-   bottom: 0;
-   width:100%;
-
+    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
-form{
+form {
     text-align: center;
 }
-#regsection
-{
+#regsection {
     margin-left: 150px;
-    padding:50px;
+    padding: 50px;
     float: left;
     background: aquamarine;
     border-radius: 15px;
     margin-top: 100px;
 }
-#login{
-    
+#login {
     margin-left: 150px;
-    padding:110px;
+    padding: 110px;
     float: left;
     background: aquamarine;
     border-radius: 15px;
     //margin-top: 15px;
-    
-   
 }
-section h2{
+section h2 {
     font-size: 1.6em;
-  color: #193742;
-  font-weight: bold;
-  margin-bottom: .5em;
-  clear: right;
+    color: #193742;
+    font-weight: bold;
+    margin-bottom: .5em;
+    clear: right;
 }
-section p{
+section p {
     font-weight: 50;
     font-size: 1.25em;
-  line-height:1.5;
+    line-height: 1.5;
     color: black;
     text-indent: 70px;
 }
-section img{
-      float: left;
-  //padding: 10px 10px 10px 0;
+section img {
+    float: left;
+    //padding: 10px 10px 10px 0;
     border-radius: 10px;
     width: 200px;
     height: 200px;
 }
-section a{
+section a {
     text-decoration: none;
 }
-section a:link{
+section a:link {
     /*background: url(../Images/more_bug.gif) no-repeat left top;*/
-   color:greenyellow;
-    /*text-indent: -1000em;*/
-
-}
-
-#register {
     
+    color: greenyellow;
+    /*text-indent: -1000em;*/
+}
+#register {
     position: absolute;
     text-decoration: none;
     top: 60px;
     right: 10px;
     font-size: 22px;
-    
 }
-#search{
+#search {
     position: absolute;
     text-decoration: none;
     top: 10px;
     right: 10px;
 }
-#indexLogin{
+#indexLogin {
     position: absolute;
     text-decoration: none;
-   top: 85px;
+    top: 85px;
     right: 200px;
     font-size: 22px;
     color: balck;
-   //float: right;
+    //float: right;
 }
- 
-form label{
+form label {
     font-size: .9em;
-  float: left;
+    float: left;
 }
 form input {
     float: right;
 }
-#button{
+#button {
     margin-top: 20px;
     margin-left: 100px;
-    
 }
-form ul li{
+form ul li {
     list-style-type: none;
     padding: 20px;
 }
-table tr td{
+table tr td {
     padding: 5px;
 }
-#button{
+#button {
     align-content: space-around;
 }
-select,#dob{
-
-    width:170px;
+select,
+#dob {
+    width: 170px;
     height: 50px:
 }
-#courses1{
+#courses1 {
     font-size: 1.16em;
 }
-legend{
-    align:center;
+legend {
+    align: center;
     //align-content: center;
     font-size: 1.25em;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-style: normal;
     margin-left: 100px;
 }
-#rImage{
+#rImage {
     width: 650px;
     height: 400px;
     float: right;
     margin-top: 100px;
 }
-
-
-#regsection table td{
+#regsection table td {
     font-size: 1.15em;
     color: black;
     width: 350px;
     padding: 10px;
 }
-<!-- css for course.html  page -->
-#formCourses{
+<!-- css for course.html page --> #formCourses {
     align-content: center;
     //text-align: center;
     //background:#2EFEF7;
 }
-#courseTable{
+#courseTable {
     padding: 50px;
     margin-top: 100px;
     margin-left: 500px;
     //align-items: center;
-    background:#2EFEF7;
+    background: #2EFEF7;
     border-radius: 20px;
 }
-.title{
-  font-size: 1.5em; 
-    font-style:normal; 
+.title {
+    font-size: 1.5em;
+    font-style: normal;
     padding-right: 50px;
 }
-
-input[type="button"],input[type="reset"],input[type="text"]{
-  font-size: 1.2em; 
-    font-style:normal;
+input[type="button"],
+input[type="reset"],
+input[type="text"] {
+    font-size: 1.2em;
+    font-style: normal;
 }
-select{
+select {
     font-size: 1.2em;
     height: 30px;
     //width: 0px;
     border-radius: 5px;
 }
 input[type="text"] {
-     //padding: 0px;
+    //padding: 0px;
     border-radius: 5px;
     height: 25px;
     width: 200px;
 }
-#chart{
+#chart {
     margin-top: 100px;
     margin-left: 100px;
 }
-#chart th{
+#chart th {
     padding-right: 120px;
     font-size: 1.55em;
     font-style: normal;
-
 }
-#chart td{
+#chart td {
     padding-right: 120px;
     font-size: 1.25em;
     font-family: Arial, Helvetica, sans-serif;
@@ -248,38 +224,34 @@ input[type="text"] {
     margin-top: 50px;
 }
 
-/*css for for topics.html */ 
-article{
-   font-size: 1.25em;
-    line-height:1.5;
-     text-indent: 70px;
+/*css for for topics.html */
+article {
+    font-size: 1.25em;
+    line-height: 1.5;
+    text-indent: 70px;
 }
 #list li {
     list-style-type: none;
     font-size: 1.25em;
-    font-family: Arial, Helvetica,sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
-
-    
 }
-article img{
+article img {
     height: 120px;
     width: 200px;
 }
 #addcourse {
     position: absolute;
-right: 20px;
+    right: 20px;
     font-size: 1.25em;
 }
-/*sub-topics.html*/
 
-#uiList li  {
+/*sub-topics.html*/
+#uiList li {
     display: block;
     float: left;
     clear: left;
     overflow: hidden;
     margin-top: 30px;
     display: none;
-    
-    
 }

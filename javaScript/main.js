@@ -1,4 +1,3 @@
-
 function transferToTable() {
     var tr = document.createElement("tr");
     var td1 = document.createElement("td");
@@ -7,38 +6,38 @@ function transferToTable() {
     var td4 = document.createElement("td");
     var td5 = document.createElement("td");
     var td6 = document.createElement("td");
-    
+
     var table = document.getElementById("chart");
     table.appendChild(tr);
     var name = document.getElementById("name").value;
     td1.innerHTML = name;
-    
-    
-    
+
+
+
     var courses = document.getElementById("courses");
     var course = courses.options[courses.selectedIndex].text;
     td2.innerHTML = "<a href='topics.html?courseName=" + course + "'>" + course + "</a>";
-    
+
     var subCourses = document.getElementById("subCourses");
     var subCourse = subCourses.options[subCourses.selectedIndex].text;
     td3.innerHTML = "<a href='javascript:subTopic()" + subCourse + "'>" + subCourse + "</a>";
 
     td4.innerHTML = document.getElementById("fee").value;
     td5.innerHTML = document.getElementById("duration").value;
-    
+
     var select = document.getElementById("level");
     var level = select.options[select.selectedIndex].text;
     td6.innerHTML = level;
-    
+
     tr.appendChild(td1);
     tr.appendChild(td2);
     tr.appendChild(td3);
     tr.appendChild(td4);
     tr.appendChild(td5);
     tr.appendChild(td6);
-   
+
     showResults();
-    
+
 }
 // showing the form
 // Hidding the table
@@ -55,44 +54,45 @@ function showResults() {
 }
 // select box
 var ui = ["HTML", "CSS", "JavaScript", "AngularJS"];
-var dotnet = ["C#.Net", "ASP.Net", "VB.Net" ];
+var dotnet = ["C#.Net", "ASP.Net", "VB.Net"];
 var java = ["Core Java", "Adavanced Java", "Springs", "Structs"];
 var database = ["Sql", "Oracle Sql", "PlSql", "Mysql"];
 
 function subTopics(course) {
     switch (course.value) {
-    case "ui":
-        setOptions(ui);
-        break;
-            
-    case "dotnet":
-        setOptions(dotnet);
-        break;
-            
-    case "java":
-            
-        setOptions(java);
-        break;
-            
-    case "database":
-            
-        setOptions(database);
-        break;
-        
-            
+        case "ui":
+            setOptions(ui);
+            break;
+
+        case "dotnet":
+            setOptions(dotnet);
+            break;
+
+        case "java":
+
+            setOptions(java);
+            break;
+
+        case "database":
+
+            setOptions(database);
+            break;
+
+
     }
-    
+
 }
+
 function setOptions(array) {
     var selectList = document.getElementById("subCourses");
     subCourses.options.length = 0;
-    
-    for (var i = 0;i<array.length;i++) {
-        
-    var option = document.createElement("option");
-    option.value = array[i];
-    option.text = array[i];
-    selectList.appendChild(option);
+
+    for (var i = 0; i < array.length; i++) {
+
+        var option = document.createElement("option");
+        option.value = array[i];
+        option.text = array[i];
+        selectList.appendChild(option);
     }
 }
 //for JASON and AJAX
@@ -104,7 +104,7 @@ request.onreadystatechange = function () {
         
         var topic = request.responseText;
         var json = JSON.parse(topic);
-        printing(json);
+        printing(json[0]);
         
 
     }
@@ -136,26 +136,32 @@ function printing(json) {
      
    }
 }
-*/
 
-$("document").ready(function(){
-    $.ajax({url:"topics.json", success:printing, type:"GET", dataType:"json"});
-    
+*/
+$("document").ready(function () {
+    $.ajax({
+        url: "topics.json",
+        type: "GET",
+        dataType: "json"
+    }).done(function (data) {
+        printing(data);
+    });
 });
+
 function printing(json) {
-    
-    for(var i in json.topics) {
+
+    $.each(json.topics, function (i) {
         var obj = json.topics[i];
         var tr = $("<tr>");
-    
-        for(var i in obj) {
-            var td = $("<td>").html(obj[i]);
+
+        $.each(obj, function (value) {
+            var td = $("<td>").html(obj[value]);
             $(tr).append(td);
-           }
-        
-    $("#chart").append(tr);
-        
-      }   
+        });
+
+        $("#chart").append(tr);
+
+    });
 
 }
 
@@ -165,12 +171,13 @@ function printing(json) {
 //var courseName = document.getElementById("topics");
 var subCourses = document.getElementById("subCourses");
 var subCourse = subCourses.options[subCourses.selectedIndex].text;
- function subTopic()  {
+
+function subTopic() {
     var name = document.getElementById("name").value;
-     var subCourses = document.getElementById("subCourses");
+    var subCourses = document.getElementById("subCourses");
     var subCourse = subCourses.options[subCourses.selectedIndex].text;
     console.log(subCourse);
-     var tr = document.createElement("tr");
+    var tr = document.createElement("tr");
     var td1 = document.createElement("td");
     var td2 = document.createElement("td");
     td1.innerHTML = name;
@@ -179,4 +186,3 @@ var subCourse = subCourses.options[subCourses.selectedIndex].text;
     tr.appendChild(td2);
     students.appendChild(tr);
 }
- 
