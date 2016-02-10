@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        header {
+            background: url(Images/reptiles.jpg);
+            border-radius: 10px;
+            background-position: center center;
+/*            background-size: cover;*/
+            height: 200px;
+        }
+
+    </style>
+    <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+
+    </script>
+</head>
+
+<body>
+    <header class="container">
+        <h1>Courses With BootStrap</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <nav class="group">
+                    <ul id="topics">
+                        <li> <a class="topicName" href="#">Home</a></li>
+                        <li> <a class="topicName" href="#">UI</a>
+                            <ul id="uiList">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">AngularJS</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="topicName" href="#">DotNet</a></li>
+                        <li><a class="topicName" href="#">Java</a></li>
+                        <li> <a class="topicName" href="#">Data Base</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-8">
+                <ul id="list"></ul>
+                <section id="section" class="group">
+
+                    <div id="accordion">
+
+                        <h1>UI</h1>
+                        <div>
+                            <article id="uiArticle"><img src="Images/ui.png"> User interface design (UI) or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing the user experience. The goal of user interface design is to make the user's interaction as simple and efficient as possible, in terms of accomplishing user goals (user-centered design..</article>
+                        </div>
+                        <h1>Java</h1>
+                        <div>
+                            <article id="java"><img src="Images/java.jpg"> Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                            </article>
+                        </div>
+                        <h1>Dot Net</h1>
+                        <div>
+                            <article id="dotnet"><img src="Images/dotnet.jpe"> Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</article>
+                        </div>
+                        <h1>Data Base</h1>
+                        <div>
+                            <article id="database"><img src="Images/Database.jpg" alt="krishna">Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript/topics.js"></script>
+</body>
+
+</html>

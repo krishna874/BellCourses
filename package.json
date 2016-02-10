@@ -1,0 +1,27 @@
+{
+  "name": "bell_courses",
+  "version": "1.0.0",
+  "description": "about bell courses",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishna874/BellCourses.git"
+  },
+  "keywords": [
+    "\"courses\"",
+    "\"topics\""
+  ],
+  "author": "venkatakrishna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krishna874/BellCourses/issues"
+  },
+  "homepage": "https://github.com/krishna874/BellCourses#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mssql": "^3.0.1"
+  }
+}
